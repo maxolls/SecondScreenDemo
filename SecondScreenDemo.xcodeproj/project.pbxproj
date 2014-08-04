@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7512144B18C78BD000A52A21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7512144A18C78BD000A52A21 /* Main.storyboard */; };
+		7512144E18C78D7400A52A21 /* SSFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7512144D18C78D7400A52A21 /* SSFirstViewController.m */; };
+		7512145118C78D7D00A52A21 /* SSSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7512145018C78D7D00A52A21 /* SSSecondViewController.m */; };
+		7512145418C7964000A52A21 /* SSMoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7512145318C7964000A52A21 /* SSMoveViewController.m */; };
 		75E142C418C687F900C384F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E142C318C687F900C384F8 /* Foundation.framework */; };
 		75E142C618C687F900C384F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E142C518C687F900C384F8 /* CoreGraphics.framework */; };
 		75E142C818C687F900C384F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E142C718C687F900C384F8 /* UIKit.framework */; };
@@ -32,6 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7512144A18C78BD000A52A21 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7512144C18C78D7400A52A21 /* SSFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFirstViewController.h; sourceTree = "<group>"; };
+		7512144D18C78D7400A52A21 /* SSFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFirstViewController.m; sourceTree = "<group>"; };
+		7512144F18C78D7D00A52A21 /* SSSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSSecondViewController.h; sourceTree = "<group>"; };
+		7512145018C78D7D00A52A21 /* SSSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSSecondViewController.m; sourceTree = "<group>"; };
+		7512145218C7964000A52A21 /* SSMoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMoveViewController.h; sourceTree = "<group>"; };
+		7512145318C7964000A52A21 /* SSMoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMoveViewController.m; sourceTree = "<group>"; };
 		75E142C018C687F900C384F8 /* SecondScreenDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondScreenDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E142C318C687F900C384F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		75E142C518C687F900C384F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,6 +85,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7512145518C7964400A52A21 /* iPad controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7512144C18C78D7400A52A21 /* SSFirstViewController.h */,
+				7512144D18C78D7400A52A21 /* SSFirstViewController.m */,
+				7512145218C7964000A52A21 /* SSMoveViewController.h */,
+				7512145318C7964000A52A21 /* SSMoveViewController.m */,
+			);
+			name = "iPad controllers";
+			sourceTree = "<group>";
+		};
+		7512145618C7964B00A52A21 /* Screen Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7512144F18C78D7D00A52A21 /* SSSecondViewController.h */,
+				7512145018C78D7D00A52A21 /* SSSecondViewController.m */,
+			);
+			name = "Screen Controllers";
+			sourceTree = "<group>";
+		};
 		75E142B718C687F900C384F8 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +140,9 @@
 			children = (
 				75E142D218C687F900C384F8 /* SSAppDelegate.h */,
 				75E142D318C687F900C384F8 /* SSAppDelegate.m */,
+				7512145518C7964400A52A21 /* iPad controllers */,
+				7512145618C7964B00A52A21 /* Screen Controllers */,
+				7512144A18C78BD000A52A21 /* Main.storyboard */,
 				75E142D518C687F900C384F8 /* Images.xcassets */,
 				75E142CA18C687F900C384F8 /* Supporting Files */,
 			);
@@ -220,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7512144B18C78BD000A52A21 /* Main.storyboard in Resources */,
 				75E142CE18C687F900C384F8 /* InfoPlist.strings in Resources */,
 				75E142D618C687F900C384F8 /* Images.xcassets in Resources */,
 			);
@@ -240,8 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7512145118C78D7D00A52A21 /* SSSecondViewController.m in Sources */,
 				75E142D418C687F900C384F8 /* SSAppDelegate.m in Sources */,
 				75E142D018C687F900C384F8 /* main.m in Sources */,
+				7512144E18C78D7400A52A21 /* SSFirstViewController.m in Sources */,
+				7512145418C7964000A52A21 /* SSMoveViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +401,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SecondScreenDemo/SecondScreenDemo-Prefix.pch";
 				INFOPLIST_FILE = "SecondScreenDemo/SecondScreenDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -376,7 +416,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SecondScreenDemo/SecondScreenDemo-Prefix.pch";
 				INFOPLIST_FILE = "SecondScreenDemo/SecondScreenDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -442,6 +484,7 @@
 				75E142EE18C687FA00C384F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75E142EF18C687FA00C384F8 /* Build configuration list for PBXNativeTarget "SecondScreenDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +493,7 @@
 				75E142F118C687FA00C384F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
